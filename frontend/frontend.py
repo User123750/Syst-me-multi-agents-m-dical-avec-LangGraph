@@ -48,13 +48,13 @@ if st.session_state.status == "Diagnostic":
                 st.error(f" Erreur détaillée : {res.text}")
 
 elif st.session_state.status == "Attente_Medecin":
-    st.info(" **PAUSE : Validation médicale requise.**")
+    st.info(" PAUSE : Validation médicale requise.")
     
     col1, col2 = st.columns(2)
     with col1:
-        st.success(f"** Synthèse :**\n\n{st.session_state.summary}")
+        st.success(f" Synthèse :\n\n{st.session_state.summary}")
     with col2:
-        st.warning(f"** Recommandations :**\n\n{st.session_state.care}")
+        st.warning(f" Recommandations :\n\n{st.session_state.care}")
     
     st.markdown("###  Espace Médecin")
     with st.form("doctor_form"):
