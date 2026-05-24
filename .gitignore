@@ -1,0 +1,14 @@
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Fichiers d'environnement (Sécurité)
+.env
+
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+
+# Fichiers de test / Rapports
+*.txt
